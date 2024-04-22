@@ -1,0 +1,71 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: start !important;
+  align-items: center;
+}
+
+#header {
+  text-align: center;
+}
+
+#upload-area {
+  width: 98% !important;
+  border: none !important;
+}
+
+#pictures {
+  width: 95%;
+  border: dashed gray 3px;
+  border-radius: 7px;
+}
+
+.picture p {
+  width: 78% !important;
+}
+
+.radio {
+  padding-left: 0 !important;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  margin: 0px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+#upload {
+  margin-left: 0 !important;
+}
+
+#result {
+  height: 21%;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#buttons {
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 15px;
+  position: absolute;
+  bottom: 10px;
+}
+
+#download {
+  margin-left: 0 !important;
+  background-color: #3e4d86;
+}

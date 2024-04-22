@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="{{ url_for('favicon') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='phone/phone.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='pc/computer.css') }}"
+    />
+    <title>Collage Maker</title>
+  </head>
+  <body>
+    <h1 id="header">Uploaded images</h1>
+    <div id="pictures">
+      <div id="upload-area">
+        <h1>Click to add pictures</h1>
+      </div>
+    </div>
+
+    <hr />
+
+    <div id="phone-toolbar">
+      <div class="radio">
+        <input type="radio" id="horizontal" checked />
+        <label>Horizontal collage</label>
+      </div>
+      <div class="radio">
+        <input type="radio" id="vertical" /><label>Vertical collage</label>
+      </div>
+      <div class="radio">
+        <input type="radio" id="box" /><label>Box collage</label>
+      </div>
+    </div>
+
+    <hr />
+
+    <div id="settings">
+      <div class="input">
+        <label>Border</label>
+        <input type="text" maxlength="3" id="border" value="0" />
+      </div>
+      <div class="input">
+        <label>Color</label>
+        <input type="color" id="color" />
+      </div>
+    </div>
+
+    <hr />
+
+    <div id="result"></div>
+
+    <div id="buttons">
+      <button id="upload">Upload</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='utils.js') }}"></script>
+    <script src="{{ url_for('static', filename='phone/phone.js') }}"></script>
+  </body>
+</html>

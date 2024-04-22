@@ -1,0 +1,206 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+:root {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #545b61;
+}
+
+#toolbar {
+  width: 20%;
+  height: 95%;
+  border-radius: 10px 0 0 10px;
+  border: solid rgb(64, 122, 164) 3px;
+  overflow: hidden;
+}
+
+#pictures {
+  min-height: 150px;
+  max-height: 30%;
+  overflow: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.picture {
+  margin: 10px 5px 10px 5px;
+  height: 50px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 7px;
+  border: solid #377dbb 2px;
+  border-radius: 7px;
+  overflow: hidden;
+  transition: background-color 0.05s;
+  position: relative;
+}
+
+.picture * {
+  pointer-events: none;
+  user-select: none;
+}
+
+.picture img {
+  height: 100%;
+  aspect-ratio: 1;
+}
+
+.picture p {
+  font-size: 1.1rem;
+  width: 60%;
+  overflow: hidden;
+}
+
+.picture span {
+  transform: rotate(45deg);
+  color: #4b4b4b;
+  font-size: 40px;
+  margin-right: 10px;
+  pointer-events: all;
+}
+
+hr {
+  background-color: rgb(0, 98, 130);
+  height: 2px;
+  border: none;
+  width: 82%;
+  border: solid rgb(0, 98, 130) 1px;
+  border-radius: 50px;
+}
+
+#upload-area {
+  width: 75%;
+  height: 95%;
+  border-radius: 0 10px 10px 0;
+  border: dashed grey 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.1s;
+}
+
+#upload-area:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+#upload-area * {
+  pointer-events: none;
+  user-select: none;
+}
+
+#upload-area h1 {
+  text-align: center;
+  color: #4d4d4d;
+}
+
+.highlight {
+  background-color: rgb(230, 230, 230);
+}
+
+#orientation {
+  margin: 20px 0 20px 0;
+}
+
+.radio {
+  margin: 10px;
+  display: flex;
+  padding-left: 20px;
+  justify-content: start;
+  align-items: center;
+}
+
+#orientation input {
+  width: 20px;
+  aspect-ratio: 1;
+}
+
+#orientation label {
+  margin: 5px;
+  height: 18px;
+}
+
+button {
+  font-size: 1.2rem;
+  width: 70%;
+  min-height: 40px;
+  margin-left: 15%;
+  border: none;
+  background-color: rgb(33, 119, 155);
+  color: white;
+  font-family: arial;
+  border-radius: 10px;
+  transition: transform 0.1s, background-color 0.1s;
+}
+
+#upload:hover {
+  background-color: rgb(23, 95, 126);
+}
+
+button:active {
+  background-color: rgb(15, 80, 115);
+  transform: translateY(5px);
+}
+
+.full {
+  pointer-events: none;
+}
+
+.full * {
+  pointer-events: all !important;
+  user-select: all !important;
+}
+
+.full:hover {
+  background-color: initial !important;
+}
+
+#collage {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+#settings {
+  margin: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.input label {
+  font-size: 1rem;
+  padding-right: 5px;
+}
+
+.input input {
+  width: 65%;
+}
+
+#border {
+  font-size: 1rem;
+}
+
+#color {
+  padding: 1px;
+}
