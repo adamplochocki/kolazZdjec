@@ -10,3 +10,4 @@
 2. Wybrać rodzaj kolażu
 3. Wybrać rozmiar ramki
 4. Wybrać kolor ramki
+5. Nacisnąć niebieski przycisk
